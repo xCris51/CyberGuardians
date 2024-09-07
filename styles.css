@@ -1,0 +1,273 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    line-height: 1.6;
+}
+
+
+a {
+    color: #3498DB;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9B59B6;
+}
+
+/* Header */
+header {
+    background-color: #121212;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo h1 {
+    color: #3498DB;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #9B59B6;
+}
+
+/* Sección de Inicio */
+.section-inicio {
+    height: 100vh;
+    background: linear-gradient(135deg, #2C3E50, #4A90E2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px; /* Para compensar el header fijo */
+}
+
+.contenido-inicio h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.contenido-inicio p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #B0B0B0;
+}
+
+.btn {
+    background-color: #8E44AD;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #9B59B6;
+}
+
+/* Sección Quienes somos */
+.section-quienes-somos {
+    padding: 100px 20px;
+    background-color: #2C2C2C;
+    text-align: center;
+}
+
+.section-quienes-somos h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #3498DB;
+}
+
+.section-quienes-somos p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #B0B0B0;
+    font-size: 1.1em;
+}
+
+/* Sección Servicios */
+.section-servicios {
+    padding: 100px 20px;
+    background-color: #1E1E1E;
+    text-align: center;
+}
+
+.section-servicios h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #3498DB;
+}
+
+.servicios-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.servicio {
+    background-color: #2C2C2C;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.servicio:hover {
+    transform: translateY(-10px);
+    background-color: #4A90E2;
+}
+
+.servicio h3 {
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.servicio p {
+    color: #B0B0B0;
+    font-size: 1em;
+}
+
+/* Sección Contacto */
+.section-contacto {
+    padding: 60px 20px;
+    background-color: #2C2C2C;
+    text-align: center;
+}
+
+.section-contacto h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #3498DB;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #2C2C2C; 
+    padding: 30px 50px 30px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #333;
+    color: #FFFFFF;
+    font-size: 1em;
+}
+
+input:focus, textarea:focus {
+    border-color: #3498DB;
+    outline: none;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #8E44AD;
+    border: none;
+    border-radius: 25px;
+    color: #FFFFFF;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #9B59B6;
+}
+
+/* Footer */
+footer {
+    background-color: #121212;
+    color: #B0B0B0;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+.redes-sociales a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.redes-sociales img {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%);
+    transition: filter 0.3s ease;
+}
+
+.redes-sociales a:hover img {
+    filter: invert(60%) sepia(100%) saturate(500%) hue-rotate(200deg);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .servicios-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-inicio {
+        padding-top: 100px;
+    }
+}
